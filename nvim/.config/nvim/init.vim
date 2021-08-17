@@ -22,10 +22,10 @@ Plug 'hrsh7th/nvim-compe'
 " Themes
 " Plug 'gruvbox-community/gruvbox'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+call plug#end()
 
 " My stuff
 lua require("redspart")
-call plug#end()
 
 colorscheme tokyonight
 "colorscheme gruvbox
