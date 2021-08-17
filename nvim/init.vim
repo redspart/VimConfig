@@ -1,4 +1,6 @@
 call plug#begin('~/.vim/plugged')
+
+" Treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Needed for telescope
@@ -25,3 +27,6 @@ colorscheme tokyonight
 "colorscheme gruvbox
 
 let mapleader = " "
+
+" setups
+lua require'nvim-treesitter.configs'.setup { ensure_installed = "maintained", highlight = { enable = true }, indent= { enable = true } }
