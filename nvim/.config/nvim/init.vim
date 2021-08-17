@@ -15,12 +15,16 @@ Plug 'kyazdani42/nvim-tree.lua'
 " Extras
 Plug 'davidhalter/jedi-vim'
 
-" Containers
+" LSP/Auto Complete
 Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
 
 " Themes
 " Plug 'gruvbox-community/gruvbox'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+
+" My stuff
+lua require("redspart")
 call plug#end()
 
 colorscheme tokyonight
