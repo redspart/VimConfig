@@ -16,7 +16,7 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'davidhalter/jedi-vim'
 
 " LSP/Auto Complete
-Plug 'neovim/nvim-lspconfig'
+Plug 'neovim/nvim-lspconfig', {'branch': 'master'}
 Plug 'hrsh7th/nvim-compe'
 
 " Themes
