@@ -8,3 +8,5 @@ augroup CLEANUP
     autocmd!
     autocmd BufWritePre * :call TrimWhitespace()
 augroup END
+
+autocmd BufWritePre *.lua lua vim.lsp.buf.formatting_sync(nil, 100)
