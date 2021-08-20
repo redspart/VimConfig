@@ -10,7 +10,7 @@ local function on_attach()
 end
 
 if vim.fn.has("mac") == 1 then
-    sumneko_root_path = "/Users/" .. USER .. "/lua-language-server"
+    sumneko_root_path = "/Users/" .. USER  .. "/lua-language-server"
     sumneko_path = sumneko_root_path .. "/bin/macOS/lua-language-server"
 elseif vim.fn.has("unix") == 1 then
     sumneko_root_path = "/home/" .. USER .. "/language-servers/lua-langauge-server"
