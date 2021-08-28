@@ -21,7 +21,7 @@ Plug 'neovim/nvim-lspconfig', {'branch': 'master'}
 Plug 'hrsh7th/nvim-compe'
 
 " Themes
-" Plug 'gruvbox-community/gruvbox'
+"Plug 'gruvbox-community/gruvbox'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
 
