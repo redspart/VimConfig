@@ -78,3 +78,4 @@ require"lspconfig".efm.setup {
 
 require'lspconfig'.jedi_language_server.setup{on_attach=on_attach}
 require'lspconfig'.tsserver.setup{on_attach=on_attach}
+require'lspconfig'.ansiblels.setup{}
