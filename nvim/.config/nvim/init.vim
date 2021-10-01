@@ -16,6 +16,9 @@ Plug 'kyazdani42/nvim-tree.lua'
 " Extras
 Plug 'davidhalter/jedi-vim'
 
+" Worktree
+Plug 'ThePrimeagen/git-worktree.nvim'
+
 " LSP/Auto Complete
 Plug 'neovim/nvim-lspconfig', {'branch': 'master'}
 Plug 'hrsh7th/nvim-compe'

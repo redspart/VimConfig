@@ -33,7 +33,6 @@ local function on_attach(client, bufnr)
   buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
   buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
-  buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
 if vim.fn.has("mac") == 1 then
@@ -68,7 +67,7 @@ require'lspconfig'.sumneko_lua.setup {
 }
 
 require"lspconfig".efm.setup {
-    cmd = {"/opt/homebrew/bin/efm-langserver"};
+    cmd = {"efm-langserver"};
     init_options = {documentFormatting = true},
     filetypes = {"lua", "python", "cpp"},
     settings = {
@@ -79,3 +78,4 @@ require"lspconfig".efm.setup {
 require'lspconfig'.jedi_language_server.setup{on_attach=on_attach}
 require'lspconfig'.tsserver.setup{on_attach=on_attach}
 require'lspconfig'.ansiblels.setup{}
+require'lspconfig'.terraformls.setup{}
