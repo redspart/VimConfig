@@ -1,2 +1,6 @@
 require("redspart.lsp")
 require("redspart.compe-config")
+require("redspart.telescope")
+require("redspart.git-worktree")
+require("redspart.rust")
+require("redspart.mappings")
