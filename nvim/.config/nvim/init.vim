@@ -41,6 +41,3 @@ let mapleader = " "
 
 " setups
 lua require'nvim-treesitter.configs'.setup { ensure_installed = "maintained", highlight = { enable = true }, indent= { enable = true } }
-lua require'rust-tools'.setup({})
-
-
