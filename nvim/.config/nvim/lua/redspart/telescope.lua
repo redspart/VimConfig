@@ -1,5 +1,6 @@
 -- Thanks Primeagen
 
+local getPath = require('common').get_path
 local actions = require("telescope.actions")
 require("telescope").setup({
     defaults = {
@@ -30,9 +31,14 @@ require("telescope").setup({
 require("telescope").load_extension("fzy_native")
 require("telescope").load_extension("git_worktree")
 
+
 local M = {}
 M.search_dotfiles = function(opts)
-    print(opts.dots)
+    require("telescope.builtin").find_files({
+        prompt_title = "< dotfiles >",
+        cwd=getPath(opts.dots),
+        hidden=true
+    })
 end
 
 M.git_branches = function()
