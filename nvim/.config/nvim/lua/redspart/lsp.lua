@@ -79,3 +79,20 @@ require'lspconfig'.jedi_language_server.setup{on_attach=on_attach}
 require'lspconfig'.tsserver.setup{on_attach=on_attach}
 require'lspconfig'.ansiblels.setup{}
 require'lspconfig'.terraformls.setup{}
+require'lspconfig'.rust_analyzer.setup{
+    on_attach=on_attach,
+    settings = {
+        ["rust-analyzer"] = {
+            assist = {
+                importGranularity = "module",
+                importPrefix = "by_self",
+            },
+            cargo = {
+                loadOutDirsFromCheck = true
+            },
+            procMacro = {
+                enable = true
+            },
+        }
+    }
+}

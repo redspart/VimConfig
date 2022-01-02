@@ -26,6 +26,9 @@ Plug 'hrsh7th/nvim-compe'
 " Themes
 "Plug 'gruvbox-community/gruvbox'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+
+" rust
+Plug 'simrat39/rust-tools.nvim'
 call plug#end()
 
 " My stuff
@@ -38,3 +41,6 @@ let mapleader = " "
 
 " setups
 lua require'nvim-treesitter.configs'.setup { ensure_installed = "maintained", highlight = { enable = true }, indent= { enable = true } }
+lua require'rust-tools'.setup({})
+
+
