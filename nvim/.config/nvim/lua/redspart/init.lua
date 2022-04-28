@@ -1,3 +1,10 @@
+
+require"nvim-treesitter.configs".setup {
+    ensure_installed = {"c", "rust", "lua", "python"},
+    highlight = { enabled = true},
+    indent = { enabled = true }
+}
+
 require("redspart.lsp")
 require("redspart.compe-config")
 require("redspart.telescope")
