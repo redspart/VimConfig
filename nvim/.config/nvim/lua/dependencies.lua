@@ -13,12 +13,16 @@ require('jetpack').setup {
 
     -- Python
     'davidhalter/jedi-vim',
+    'puremourning/vimspector',
 
     -- Rust
     'simrat39/rust-tools.nvim',
 
     -- Worktree
     'ThePrimeagen/git-worktree.nvim',
+
+    -- Markdown
+    {'iamcco/markdown-preview.nvim', run = 'call mkdp#util#install()'},
 
     -- LSP
     {'neovim/nvim-loading', branch = 'master'},
