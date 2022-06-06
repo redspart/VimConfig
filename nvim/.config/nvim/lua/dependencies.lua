@@ -30,6 +30,5 @@ require('jetpack').setup {
     'hrsh7th/nvim-compe',
 
     -- Themes
-    'gruvbox-community/gruvbox',
-    -- 'folke/tokyonight.nvim', { 'branch': 'main' }
+    'gruvbox-community/gruvbox'
 }
