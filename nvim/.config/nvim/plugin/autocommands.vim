@@ -12,5 +12,3 @@ augroup END
 set updatetime=300
 autocmd BufWritePre *.lua lua vim.lsp.buf.formatting_sync(nil, 10000)
 autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync(nil, 200)
-autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
-
