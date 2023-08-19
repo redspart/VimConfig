@@ -1,5 +1,5 @@
-local server_list = { "sumneko_lua", "efm", "ansiblels", "rust_analyzer", "tsserver", "terraformls",
-    "jedi_language_server" }
+local server_list = { "lua_ls", "efm", "ansiblels", "rust_analyzer", "tsserver", "terraformls",
+    "jedi_language_server", "gopls" }
 require("mason").setup()
 require("mason-lspconfig").setup({ ensure_installed = server_list })
 local lspConfig = require("lspconfig")
