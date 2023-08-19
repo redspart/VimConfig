@@ -1,7 +1,7 @@
 require "nvim-treesitter.configs".setup {
-    ensure_installed = { "c", "rust", "lua", "python" },
-    highlight = { enabled = true },
-    indent = { enabled = true }
+    ensure_installed = { "c", "rust", "lua", "python", "go" },
+    highlight = { enable = true },
+    indent = { enable = true }
 }
 
 require("core.sets")
@@ -12,3 +12,4 @@ require("core.git-worktree")
 require("core.rust")
 require("core.mappings")
 require("core.autos")
+require("core.go")
