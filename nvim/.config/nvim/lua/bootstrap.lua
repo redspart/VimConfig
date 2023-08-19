@@ -18,6 +18,10 @@ return require('packer').startup(function(use)
         run = ':TSUpdate'
     }
 
+    -- Go
+    use 'ray-x/go.nvim'
+    use 'ray-x/guihua.lua'
+
     -- Needed for telescope
     use 'nvim-lua/popup.nvim'
     use 'nvim-lua/plenary.nvim'
@@ -31,6 +35,7 @@ return require('packer').startup(function(use)
     -- Rust
     use 'simrat39/rust-tools.nvim'
 
+
     -- Worktree
     use 'ThePrimeagen/git-worktree.nvim'
 
@@ -40,7 +45,8 @@ return require('packer').startup(function(use)
     use 'neovim/nvim-lspconfig'
 
     -- Themes
-    use 'gruvbox-community/gruvbox'
+    use 'ray-x/starry.nvim'
+    --use 'gruvbox-community/gruvbox'
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
