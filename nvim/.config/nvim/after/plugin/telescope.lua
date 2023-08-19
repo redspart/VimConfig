@@ -2,7 +2,7 @@ local Remap = require("core.keymap")
 local nnoremap = Remap.nnoremap
 
 nnoremap("<C-p>", function()
-    require("telescope.builtin").git_files()
+    require("telescope.builtin").find_files()
 end)
 
 nnoremap("<Leader>pf", function()
